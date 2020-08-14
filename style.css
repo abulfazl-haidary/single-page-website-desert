@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+img {
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    background-image: url('sahara.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    /* z-index: 9999; */
+    cursor: pointer;
+
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    color: #dadada;
+}
+
+.container {
+    /* background-image: url('sahara.jpg') cover; */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.container::before {
+    content:'';
+    background: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.container .main-content {
+    padding: 0 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.container .main-content .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 2rem 3rem;
+}
+
+.main-content .nav .logo {
+    width: 40%;
+    padding: 0 1rem;
+}
+
+.main-content .nav .logo h1 {
+    font-weight: 400;
+    font-family: kaushan script;
+    cursor: pointer;
+    color: #e5989b;
+}
+
+.main-content .nav ul {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5rem;
+    text-transform: capitalize;
+}
+
+.main-content .nav ul li a {
+    color: #f7ede2;
+    padding: 0 1rem;
+}
+
+.main-content .nav .menu {
+    display: inline-block;
+    width: 10%;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.nav .menu .toggleMenu span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7ede2;
+    width: 25px;
+    height: 3px;
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+
+
+.nav .menu .toggleMenu span:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background: #f7ede2;
+}
+
+.nav .menu .toggleMenu span:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background: #f7ede2;
+}
+
+
+.main-content .content {
+    /* background: #afb3b475; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    height: 91vh;
+}
+
+.content .main-text {
+    padding: 0 1rem; 
+    color: #f7ede2;
+}
+
+.content .main-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content .main-text p {
+    padding: 1rem 0;
+}
+
+.content .main-text button.Explore {
+    padding: .5rem 3rem;
+    border-radius: 30px;
+    border: none;
+    background: #f7ede2;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.main-content button.Explore:hover {
+    transform: translateX(2px);
+    background: #c38e70;
+}
+
+.content .sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-row-gap: 1.4rem;
+}
+
+.content .sections .imgBx {
+    padding: 1rem;
+    border-radius: 14px;
+    width: 90%;
+    height: 360px;
+    transition: transform ease .4s;
+}
+
+.content .sections .imgBx:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.content .sections .imgBx.One {
+    background: url(One.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content .sections .imgBx.Two {
+    background: url(Two.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content .sections .imgBx.Three {
+    background: url(Three.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content .sections .imgBx.Four {
+    background: url(sahara.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sections .imgBx .imgContent {
+    margin: 0 auto;
+}
+
+.sections .imgBx .imgContent h4 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sections .imgBx .imgContent img.contentImg {
+    width: 100%;
+    height: 100%;
+}
