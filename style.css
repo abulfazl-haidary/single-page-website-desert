@@ -21,7 +21,6 @@ body {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    /* z-index: 9999; */
     cursor: pointer;
 
 }
@@ -33,7 +32,6 @@ li {
 }
 
 .container {
-    /* background-image: url('sahara.jpg') cover; */
     width: 100%;
     height: 100vh;
     position: relative;
@@ -141,7 +139,6 @@ li {
 
 
 .main-content .content {
-    /* background: #afb3b475; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
@@ -191,13 +188,13 @@ li {
 .content .sections .imgBx {
     padding: 1rem;
     border-radius: 14px;
-    width: 90%;
-    height: 360px;
+    width: 85%;
+    height: 340px;
     transition: transform ease .4s;
 }
 
 .content .sections .imgBx:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     cursor: pointer;
 }
 
